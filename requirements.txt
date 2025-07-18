@@ -3,5 +3,4 @@ dash-bootstrap-components==1.7.1
 dash-iconify==0.1.2
 dash-mantine-components==0.12.0
 dash-tools
-numpy
 pandas==1.4.3
