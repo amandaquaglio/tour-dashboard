@@ -1,0 +1,191 @@
+/* custom.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fafaf8; /* Cinza claro */
+    color: #343a40; /* Cinza escuro */
+}
+
+.same-height {
+    display: flex; /* Habilita o uso de Flexbox */
+    align-items: stretch; /* Estica os itens para que tenham a mesma altura */
+    height: 100%; /* Garante altura consistente para a linha inteira */
+}
+
+.intro-text {
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    flex: 1; /* Faz o texto ocupar o espaço máximo disponível */
+}
+
+.app-header {
+    background-color: #343a40; /* Cinza escuro */
+    color: #fff; /* Branco */
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.app-header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* Abas */
+.nav-link {
+    color: #343a40 !important; /* Cinza escuro */
+}
+
+.nav-link.active {
+    background-color: #343a40 !important; /* Cinza escuro */
+    color: #fff !important; /* Branco */
+}
+
+/* Botões */
+button {
+    background-color: #007bff !important; /* Azul padrão do Bootstrap */
+    border-color: #007bff !important;
+    color: #fff !important;
+    height: 40px;
+
+}
+
+button:hover {
+    background-color: #0069d9 !important; /* Azul mais escuro no hover */
+    border-color: #0062cc !important;
+}
+
+
+
+
+/* Dropdowns */
+.Select-control {
+    border: 1px solid #ced4da !important; /* Borda padrão do Bootstrap */
+}
+
+/* Markdown */
+.markdown-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Estilos gerais para o container */
+.container {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 100%; /* Garante que o container se adapte à largura da tela */
+}
+
+/* Estilos para os títulos */
+.text-center {
+    text-align: center;
+}
+
+/* Estilos para os cards de evento */
+.event-card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    border-radius: 10px; /* Bordas mais arredondadas */
+    display: flex; /* Habilitando flexbox para os cards */
+    flex-direction: column; /* Garante que o conteúdo interno seja organizado em coluna */
+    /* height: 100%;  Removendo o height:100% */
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Sombra mais forte no hover */
+}
+
+.card-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: #555;
+    overflow: hidden; /* Garante que o texto não vaze */
+    /* flex-grow: 1;  Removendo o flex-grow: 1 */
+}
+
+/* Estilos para as imagens */
+.img-fluid {
+    border-radius: 8px; /* Bordas arredondadas para as imagens */
+    margin-bottom: 10px;
+    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+    height: 150px; /* Altura fixa para as imagens (ajuste conforme necessário) */
+}
+
+/* Adicionando estilo para a linha que contém os cards */
+.row {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha em telas menores */
+    align-items: stretch; /* Garante que todos os cards na mesma linha tenham a mesma altura */
+}
+
+/* Aumentar a espessura do track do slider */
+.rc-slider .rc-slider-track {
+    background-color: #007bff; /* Cor da trilha */
+    height: 12px;              /* Aumentar a altura */
+}
+
+.rc-slider .rc-slider-step {
+    height: 12px; 
+} 
+
+.rc-slider .rc-slider-rail {
+    height: 12px; /* Aumentar a altura */
+}
+.rc-slider .rc-slider-dot {
+    height: 15px; 
+    width:  15px;
+} 
+
+.rc-slider .rc-slider-with-marks {
+    background-color: #007bff; /* Cor da trilha */
+    height: 12px;              /* Aumentar a altura */
+}
+
+/* Aumentar o tamanho do handle do slider */
+.rc-slider .rc-slider-handle {
+      border: 2px solid #007bff; /* Cor da borda */
+      width: 24px;              /* Aumentar a largura */
+      height: 24px;             /* Aumentar a altura */
+      margin-top: -10px;         /* Ajustar a posição vertical */
+}
+
+/* Estilo do handle quando estiver focado ou hover */
+.rc-slider .rc-slider-handle:active,
+.rc-slider .rc-slider-handle:focus,
+.rc-slider .rc-slider-handle:hover {
+      border-color: #0056b3;      /* Cor da borda no hover */
+      box-shadow: 0 0 5px rgba(0, 86, 179, 0.5); /* Adicionar sombra */
+}
+
+/* Estilo das marcas (ticks) */
+.rc-slider .rc-slider-mark-text {
+      font-size: 14px;          /* Tamanho da fonte */
+      color: #121314;           /* Cor do texto */
+}
+
+/* Media query para telas menores (smartphones) */
+@media (max-width: 768px) {
+    /* Removendo flexbox para que os cards ocupem toda a largura da tela */
+    .row {
+        display: block;
+    }
+
+    /* Garante que cada card ocupe 100% da largura */
+    [class*="col-"] {
+        width: 100%;
+    }
+
+    .event-card {
+        margin-bottom: 15px; /* Espaçamento maior entre os cards */
+        height: auto; /* Garante que a altura se ajuste ao conteúdo em telas menores */
+    }
+}

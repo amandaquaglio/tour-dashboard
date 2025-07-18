@@ -1,0 +1,1 @@
+Para mais informações sobre os dados originais apresentados neste dashboard, visite o site de [Dados do Ministério do Turismo](https://dados.gov.br/dados/conjuntos-dados/estimativas-de-chegadas-de-turistas-internacionais-ao-brasil).
